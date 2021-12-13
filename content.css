@@ -1,0 +1,74 @@
+html {
+    background-color: #EFF2DE;
+}
+
+#budget {
+    border: 4px solid green;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    height: 126px;
+    width: 400px;
+    display: inline-block;
+}
+
+#expense {
+    border: 4px solid red;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    height: 200px;
+    width: 400px;
+    display: inline-block;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #B6C557;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #B6C576;
+}
+
+.content1 {
+  display: block;
+}
+
+#result, #expenseDisplay {
+  display: inline-block;
+}
+
+.con {
+  display: inline-block;
+  margin: 5px;
+}
+
+#result, #expenseDisplay {
+  float: right;
+}
+
+#tables {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 2px solid black;
+}
