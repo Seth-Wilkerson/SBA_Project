@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget App</title>
+<link rel="stylesheet" href="styles/content.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #932C72;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B6C557;
+  color: white;
+}
+
+a.active {
+	float: left;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a style="font-family: 'Bakbak One', cursive;" class="active" href="index.html"><img src="images/img_453145.png" height="18px" width="18px">Budget App</a>
+  <a style="font-family: 'Bakbak One', cursive;" href="about.html">About</a>
+  <a style="font-family: 'Bakbak One', cursive;" href="content.html">Budget</a>
+  <a style="font-family: 'Bakbak One', cursive;" href="index.html">Sign in</a>
+</div>
+<div id="all">
+  <div class="content1">
+    <div class="form" id="budget">
+      <form>
+        <label for="income">ENTER INCOME</label>
+        <input type="text" id="income" name="income" placeholder="$40,000">
+        
+        <input onclick="addIncome()" type="button" value="Create Income">
+      </form>
+    </div>
+
+    <div id="result">
+      <div class="con">
+      <h1>INCOME</h1>
+      <h1 id="iVal">$0</h1>
+      </div>
+
+      <div class="con">
+      <h1>EXPENSE</h1>
+      <h1 id="eVal">$0</h1>
+      </div>
+
+      <div class="con">
+      <h1>BALANCE</h1>
+      <h1 id="bVal">$0</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="content1">
+    <div class="form" id="expense">
+      <form>
+        <label for="name">ENTER EXPENSE NAME</label>
+        <input type="text" id="name" name="name" placeholder="Gas">
+
+        <label for="amount">ENTER EXPENSE AMOUNT</label>
+        <input type="text" id="amount" name="amount" placeholder="$300">
+
+        <input onclick="addExpense()" type="button" value="Add Expense">
+      </form>
+    </div>
+
+    <div id="expenseDisplay">
+      <table id="tables">
+        <tr>
+          <th>EXPENSE NAME</th>
+          <th>EXPENSE AMOUNT</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>

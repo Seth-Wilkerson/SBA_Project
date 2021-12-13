@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #932C72;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B6C557;
+  color: white;
+}
+
+a.active {
+	float: left;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a style="font-family: 'Bakbak One', cursive;" class="active" href="index.html"><img src="images/img_453145.png" height="18px" width="18px">Budget App</a>
+  <a style="font-family: 'Bakbak One', cursive;" href="about.html">About</a>
+  <a style="font-family: 'Bakbak One', cursive;" href="content.html">Budget</a>
+  <a style="font-family: 'Bakbak One', cursive;" href="index.html">Sign in</a>
+</div>
+
+<div class="form">
+  <form>
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" placeholder="John Doe">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="JohnD@example.com">
+
+    <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    
+      <input onclick="validateUser()" type="button" value="Sign in">
+  </form>
+
+  <table id="tables">
+    <tr>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td id="theName">John Doe</td>
+      <td id="theEmail">JohnD@example.com</td>
+      <td id="theCountry">Australia</td>
+    </tr>
+  </table>
+
+  <h4 id="error"></h4>
+</div>
+
+
+
+<script src="scripts/validate.js"></script>
+</body>
+</html>
