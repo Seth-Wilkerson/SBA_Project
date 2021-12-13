@@ -42,7 +42,7 @@ a.active {
 }
 </style>
 </head>
-<body>
+<body id="main">
 
 <div class="topnav">
   <a style="font-family: 'Bakbak One', cursive;" class="active" href="index.html"><img src="images/img_453145.png" height="18px" width="18px">Budget App</a>
@@ -57,6 +57,11 @@ a.active {
   <h4>Made by Seth Wilkerson</h4>
   <h5>View all code on <a target="_blank" href="https://github.com/Seth-Wilkerson">GitHub</a></h5>
 </div>
-
+<input id="cColor" type="button" value="Change Color">
+<script>
+document.getElementById("cColor").addEventListener("click", function() {
+  document.getElementById("main").style.color = "red";
+});
+</script>
 </body>
 </html>
